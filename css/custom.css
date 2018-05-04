@@ -1,0 +1,323 @@
+.mt20 {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.mt50 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.mt100 {
+	margin-top: 100px;
+}
+.contactbg {
+	position: relative;
+	background-image: url(../img/miami-bg.jpg)
+}
+
+/* Rooms
+-------------------------------------------------- */
+/* Room Thumbnails */
+.room-thumb {
+	width: 356px;
+	height: 283px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #ebebeb;
+	-webkit-box-shadow: 0 2px 0 0 #e0e0e0;
+	box-shadow: 0 2px 0 0 #e0e0e0;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 5000;
+}
+.room-thumb .mask {
+	width: 356px;
+	height: 281px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0
+}
+.room-thumb img {
+	display: block;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #ebebeb;
+}
+.room-thumb .main {
+	border-bottom: 1px solid #ebebeb;
+	height: 55px;
+}
+.room-thumb .main h5 {
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	padding: 10px 0 0 20px;
+	display: inline-block;
+}
+.room-thumb .main .price {
+	display: inline;
+	float: right;
+	font-size: 18px;
+	font-weight: bold;
+	height: 55px;
+	padding: 6px 25px;
+	border-top: none;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	}
+.room-thumb .main .price span {
+	display: block;
+	color: #979797;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: center;
+}
+.room-thumb .content {
+	position: relative;
+	padding: 20px;
+	text-align: left;
+}
+.room-thumb .content button {
+	margin-top: 5px;
+}
+.room-thumb .content p span {
+	font-weight: bold;
+	color:#000;
+	display: block;
+}
+.room-thumb .content p {
+	color:#000;
+	display: block;
+	font-size:11px;
+}
+.room-thumb .content i {
+	padding-right: 5px;
+}
+.room-thumb img {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.room-thumb .mask {
+	background-color: #fff;
+	-webkit-transform: translateY(228px);
+	-moz-transform: translateY(228px);
+	-o-transform: translateY(228px);
+	-ms-transform: translateY(228px);
+	transform: translateY(228px);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.room-thumb:hover .mask {
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+}
+.room-thumb:hover img {
+	-webkit-transform: translateY(-228px);
+	-moz-transform: translateY(-228px);
+	-o-transform: translateY(-228px);
+	-ms-transform: translateY(-228px);
+	transform: translateY(-228px);
+}
+/* Room List */
+.room-list {
+	margin-top: -60px;
+	margin-bottom: -60px;
+}
+.room-list .room-thumb {
+	margin-bottom: 60px;
+}
+ @media (min-width: 992px) and (max-width: 1199px) {
+/* Room thumbnails */
+.room-thumb {
+	font-size: 12px;
+}
+.room-thumb, .room-thumb .mask {
+	width: 100%;
+	height: 224px;
+}
+.room-thumb .main h5 {
+	padding: 0 10px;
+}
+.room-thumb .main .price {
+	padding: 10px;
+	font-size: 12px;
+	border-right: none;
+}
+.room-thumb .main, .room-thumb .main .price {
+	height: 35px;
+}
+.room-thumb .mask {
+	background-color: #fff;
+	-webkit-transform: translateY(188px);
+	-moz-transform: translateY(188px);
+	-o-transform: translateY(188px);
+	-ms-transform: translateY(188px);
+	transform: translateY(188px);
+}
+.room-thumb .content {
+	padding: 10px;
+}
+.room-thumb .main .price span {
+	display: none;
+}
+.room-thumb .content .btn {
+	margin-top: 0;
+}
+.room-thumb .btn-lg {
+	padding: 6px 16px;
+	font-size: 14px;
+}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* Room thumbnails */
+.room-thumb, .room-thumb .mask {
+	width: 100%;
+	height: 176px;
+}
+.room-thumb .main h5 {
+	padding: 0 10px;
+	font-size: 12px;
+}
+.room-thumb .main .price {
+	padding: 10px;
+	font-size: 12px;
+	border-right: none;
+}
+.room-thumb .main, .room-thumb .main .price {
+	height: 35px;
+}
+.room-thumb .mask {
+	background-color: #fff;
+	-webkit-transform: translateY(141px);
+	-moz-transform: translateY(141px);
+	-o-transform: translateY(141px);
+	-ms-transform: translateY(141px);
+	transform: translateY(141px);
+}
+.room-thumb .content {
+	padding: 10px;
+	font-size: 10px;
+}
+.room-thumb .main .price span {
+	display: none;
+}
+.room-thumb .content .btn {
+	margin-top: 0;
+}
+.room-thumb .btn-lg {
+	padding: 6px 16px;
+	font-size: 14px;
+}
+.room-thumb .mask p {
+	display: none;
+}
+}
+
+@media (max-width: 767px) {
+
+/* Room-thumb */
+.room-thumb {
+	margin-bottom: 50px;
+}
+.room-thumb, .room-thumb .mask {
+	width: 100%;
+	height: auto;
+}
+.room-thumb .mask {
+	position: relative;
+	background-color: #fff;
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-o-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+}
+.room-thumb:hover .mask {
+	-webkit-transform: none;
+	-moz-transform: none;
+	-o-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+.room-thumb:hover img {
+	-webkit-transform: none;
+	-moz-transform: none;
+	-o-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+.room-thumb .main .price {
+	border-right: none;
+}
+}
+.lined-heading {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 50px;
+	text-align: center;
+	display: block;
+}
+h1.lined-heading:before, h2.lined-heading:before, h3.lined-heading:before, h4.lined-heading:before, h5.lined-heading:before, h6.lined-heading:before {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	height: 1px;
+	border-top: 2px solid #ccc;
+	content: "";
+	color:#000;
+}
+h1.lined-heading span, h2.lined-heading span, h3.lined-heading span, h4.lined-heading span, h5.lined-heading span, h6.lined-heading span {
+	position: relative;
+	z-index: 1;
+	padding: 0 20px;
+	background: #fff;
+	display: inline-block;
+	color:#000;
+	
+}
+
+
+
+
+#reservation-form .price, label span, .room-thumb .main .price, .room-thumb .content p span, .blog-author span, #owl-reviews .text-balloon span, .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, aside .widget ul a:hover, .yamm a:hover, .pagination > li > a {
+	color: #ff7f00 !important;
+}
+#reservation-form .fa.infield, #reservation-form .form-inline .fa.infield, .room-thumb .content i, .box-icon i, table i, #go-top i, .testimonials .owl-theme .owl-controls .owl-buttons div i, .standard-slider .owl-theme .owl-controls .owl-buttons div i, .testimonials .owl-theme .owl-controls .owl-buttons div, .standard-slider .owl-theme .owl-controls .owl-buttons div, #go-top {
+	color: #ff7f00;
+}
+
+
+
+header, .navbar-nav .dropdown-menu, .blog-author img, .comment .avatar img, aside h3, blockquote, .ui-widget-header, .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, #owl-gallery, #owl-reviews img, .parallax-effect, .revolution-slider, .testimonials .owl-theme .owl-controls .owl-buttons div, .standard-slider .owl-theme .owl-controls .owl-buttons div, #go-top, .box-icon .circle, .testimonials .owl-theme .owl-controls .owl-buttons div, .standard-slider .owl-theme .owl-controls .owl-buttons div, #map {
+	border-color: #FCBE1E !important;
+}
+
+/* UI background color */
+#top-header .th-text .th-item .btn-group ul.dropdown-menu > li > a:hover, article .meta-date, .comment .reply-button, aside .widget .tags a, aside .widget ul a:hover .badge, #call-to-action, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, #go-top:hover, .testimonials .owl-theme .owl-controls .owl-buttons div:hover, .standard-slider .owl-theme .owl-controls .owl-buttons div:hover, .box-icon .circle:hover, .gallery a i, .gallery-slider a i {
+	background: #D3A317;
+}
+
+
+
+
